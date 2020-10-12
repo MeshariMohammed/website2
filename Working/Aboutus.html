@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- linking css files -->
+	<link rel="stylesheet" href="/CSS/stylemain.css">
+	<link rel="stylesheet" href="/CSS/dropdown.css">
+	<link rel="stylesheet" href="/CSS/icons.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet"
+		  href="https://fonts.googleapis.com/css?family=Tangerine">
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		  
+	<title>About us</title>
+</head>
+<body>
+	<!-- this is a navbar -->
+	<div class="navbar">
+		<a class="active" href="/Working/main.html">Home</a>
+		<a href="/Working/html.html">HTML</a> 
+		<a href="/Working//css.html">CSS</a>
+		<a href="/Working/JavaScript.html">JavaScript</a>
+		<a href="/Working/PHP.html">PHP</a> 
+		<a href="/Working/Contact.html">Contact</a> 
+		<a href="/Working/Aboutus.html">About us</a>
+	  </div>
+
+	  <div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+		<div id="myDropdown" class="dropdown-content">
+		  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+		  <!-- <a href="https://github.com/mohammed-ab99/SE371">Mohammed Abed</a>
+		  <a href="https://github.com/OmarGhani94/cvproject">Omar Ghani</a>
+		  <a href="https://github.com/salim1206/First-project">Salim hijazi</a>
+		  <a href="https://github.com/xRx90/MohammedKhalifa">Mohammed Khalifa</a>
+		  <a href="https://github.com/Almazroua/CV-/blob/master/rm.htm">Abdulrahman Almazroua</a>
+		  <a href="https://github.com/ibrahimNabee/ibrahimCVV">Ibrahim nabil</a>
+		  <a href="https://github.com/Khaled-404/CV">Khaled Aloufi</a>
+		  <a href="https://github.com/ACNaif/se371">Naif Alfirm</a>
+		  <a href="https://github.com/Noureddin19/SE371">Noureddin Farahat</a>
+		  <a href="https://github.com/basselDroubi/cv.git">Bassel Al Droubi</a>
+		  <a href="https://github.com/Samerjnaz/CV.git">Samer Nasser</a>
+		  <a href="https://github.com/TalalBafarat/SE371">Talal Bafarat</a>
+		  <a href="https://github.com/faisal9991/Faisal-217110045.git">Faisal Khalid</a> -->
+		  <a href="https://github.com/MeshariMohammed/webProject1 ">Meshari Alrajeh</a>
+		  <!-- <a href="https://github.com/Mohammed217/Mohammed ">Mohammed Alotaibi</a>
+		  <a href="https://github.com/216110208/Abdulrahman-Caduar.git">Abdulrahman Cadura</a>
+		  <a href="https://github.com/korsider/webb.git">Abdullah Ali Al rajhi</a>
+		  <a href="https://github.com/Abdullah5457/Abdullah-CV.git ">ِِِِAbdullah Ismail ALismail</a>
+		  <a href="https://github.com/Faris-Algholamy/CV.git">Faris Muhriz Al gholamy</a>
+		  <a href="https://github.com/Dv-pirate/CV.git">Alhousain Albar</a> -->
+		</div>
+	  </div>
+	  
+	  <footer>
+		  <div class="main">
+			  <div class="icons">
+				  <a href="https://github.com/MeshariMohammed"><i class="fa fa-github" aria-hidden="true" style="font-size: 60px;"></i></a>
+			  </div>
+			  <div class="icons">
+				<a href="https://twitter.com/sa_mishari"><i class="fa fa-twitter" aria-hidden="true" style="font-size: 60px;"></i></a>
+			</div>
+		  </div>
+	  </footer>
+
+	  <script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+		function filterFunction() {
+		var input, filter, ul, li, a, i;
+		input = document.getElementById("myInput");
+		filter = input.value.toUpperCase();
+		div = document.getElementById("myDropdown");
+		a = div.getElementsByTagName("a");
+		for (i = 0; i < a.length; i++) {
+			txtValue = a[i].textContent || a[i].innerText;
+			if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			a[i].style.display = "";
+			} else {
+			a[i].style.display = "none";
+				}
+			}
+		}
+		</script>
+</body>
+</html>
